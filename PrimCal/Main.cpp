@@ -16,6 +16,9 @@ int main()
 		return 0;
 	}
 
+	//Öffen bzw erstellen einen Data.txt documents
+
+
 	//inizailisirung eines zähler für die primzahlen
 	int countprim = 0;
 
