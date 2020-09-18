@@ -16,16 +16,17 @@ int main()
 	fstream Datatxt;
     clock_t startTime;
 
-    cout << "Wählen sie nun den bereich in dem sie nach Primzahlen suchen wollen\n";
-	cout << "Von\n"; int startNum; cin >> startNum;
-	cout << "Bis\n"; int endNum; cin >> endNum;
+    cout << "Please enter a area to look for prime numbers\n";
+	cout << "Starting from: "; int startNum; cin >> startNum;
+	cout << "Till: "; int endNum; cin >> endNum; cout << '\n';
 
 	startTime = clock();
 
     //Eingabe der start und end werte
 	if (startNum > endNum)
 	{
-		cout << "Der angegebender Bereich ist fehlerhaft!!!";
+		cout << "Bad area! CUNT";
+		cin;
 		return 0;
 	}
 
@@ -58,11 +59,12 @@ int main()
 	//verhältnis von zahlen und primzahlen
 	float Ver = float(countprim) / float(endNum - startNum);
 
-	cout << "\n Von : " << endNum - startNum << " Zahlen sind : " << countprim << " Primzahlen";
-	cout << "\n Das Verhätnis ist : " << Ver;
+	cout << "\n From: " << endNum - startNum << " numbers, are: " << countprim << " prime numbers";
+	cout << "\n " << (Ver*100) <<"% are prime numbers" ;
 
 	duration = (clock() - startTime) / (double)CLOCKS_PER_SEC;
-	cout << "\n Benötigte Zeit in s : " << duration << '\n';
+	cout << "\n The calculation took: " << duration << "s";
 
 	Datatxt.close();
+	cin;
 }
