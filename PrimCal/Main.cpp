@@ -1,9 +1,8 @@
 #include "Header.h"
 #include <iostream>
 #include <fstream>
-#include <cstdio>
 #include <ctime>
-#include <string>
+
 
 using namespace std;
 
