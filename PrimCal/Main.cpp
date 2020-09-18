@@ -59,15 +59,11 @@ int main()
 	//verhältnis von zahlen und primzahlen
 	float Ver = float(countprim) / float(endNum - startNum);
 
-	cout << "\n Von :";
-	cout << endNum - startNum;
-	cout << " Zahlen sind :";
-	cout << countprim;
-	cout << " Primzahlen das Verhätnis ist :";
-	cout << Ver;
+	cout << "\n Von : " << endNum - startNum << " Zahlen sind : " << countprim << " Primzahlen";
+	cout << "\n Das Verhätnis ist : " << Ver;
 
 	duration = (clock() - startTime) / (double)CLOCKS_PER_SEC;
-	cout << " Time: " << duration << '\n';
+	cout << "\n Benötigte Zeit in s : " << duration << '\n';
 
 	Datatxt.close();
 }
